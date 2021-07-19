@@ -12,4 +12,14 @@ describe('getName', () => {
     
         expect(actual).toEqual(expected);
     });
+
+    it('gets the name of an object', () => {
+        const character = { _id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
+        const actual = getName(character); // returns spot
+        const expected = 'Aang'; 
+    // const character = { _id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
+    // getName(character) // returns Aang
+    
+        expect(actual).toEqual(expected);
+    });
 });
