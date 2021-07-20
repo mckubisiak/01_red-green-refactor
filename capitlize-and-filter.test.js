@@ -10,6 +10,14 @@ describe('captlizeAndFilter', () => {
     
         expect(actual).toEqual(expected);
     });
+    
+    it('captilize all strings in an array, and removes items with F/f', () => {
+        const stringArray = ['jerry', 'chris', 'filber', 'ollie', 'rick'];
+        const actual = captlizeAndFilter(stringArray);
+        const expected = ['JERRY', 'CHRIS', 'OLLIE', 'RICK'] ; 
+    
+        expect(actual).toEqual(expected);
+    });
 
     
 });
