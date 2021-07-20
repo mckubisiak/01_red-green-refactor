@@ -3,10 +3,10 @@ import captlizeAndFilter from './capitlize-and-filter';
 
 describe('captlizeAndFilter', () => {
 
-    it('copys an array and adds a number to it', () => {
+    it('captilize all strings in an array, and removes items with F/f', () => {
         const stringArray = ['frank', 'janet', 'Tim', 'fillip', 'philip'];
         const actual = captlizeAndFilter(stringArray);
-        const expected = ['Janet', 'Tim', 'Philip'] ; 
+        const expected = ['JANET', 'TIM', 'PHILIP'] ; 
     
         expect(actual).toEqual(expected);
     });
