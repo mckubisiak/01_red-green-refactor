@@ -3,7 +3,7 @@ import copyAndPush from './copy-and-push';
 
 describe('copyAndPush', () => {
 
-    it('gets the name of an object', () => {
+    it('copys an array and adds a number to it', () => {
         const numbers = [1, 2, 3];
         const actual = copyAndPush(numbers, 4);
         const expected = [1, 2, 3, 4]; 
@@ -13,7 +13,7 @@ describe('copyAndPush', () => {
 
 });
 
-// it('gets the name of an object', () => {
+// it('copys an array and adds a number to it', () => {
 //     const actual = copyAndPush(); 
 //     const expected =  ; 
 
