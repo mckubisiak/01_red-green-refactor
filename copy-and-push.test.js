@@ -11,6 +11,15 @@ describe('copyAndPush', () => {
         expect(actual).toEqual(expected);
     });
 
+    it('copys an array and adds a number to it', () => {
+        const numbers = [1, 2, 3];
+        const numbersToAdd = [4, 5, 6];
+        const actual = copyAndPush(numbers, numbersToAdd);
+        const expected = [1, 2, 3, 4,5, 6]; 
+    
+        expect(actual).toEqual(expected);
+    });
+
 });
 
 // it('copys an array and adds a number to it', () => {

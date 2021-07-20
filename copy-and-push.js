@@ -1,6 +1,8 @@
-const copyAndPush = () => {
+const copyAndPush = (arr, add) => {
 
-  return [1, 2, 3, 4];
+  const newArr = arr.concat(add);
+
+  return newArr;
 
 };
 
