@@ -1,5 +1,5 @@
 /* eslint-disable indent */
-import fetchQuotes from './capitlize-and-filter';
+import fetchQuotes from './fetch-quotes';
 
 describe('fetchQuotes', () => {
 
