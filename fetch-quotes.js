@@ -7,7 +7,9 @@ const fetchQuotes = async () => {
 
     const body = await apiRequest.json();
 
-return body.results;
+    const singleQuote = body[0];
+    
+return singleQuote;
 
 };
 
